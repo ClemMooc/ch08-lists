@@ -3,10 +3,12 @@
 # Create a *list* of 10 random numbers. Use the `runif` function to make a vector of random numbers,
 # then use `as.list()` to convert that to a list.
 
+  random = runif(10, 0,99)
+  list1 = as.list(random)
 
 # Use `lapply()` to apply the `round()` function to each number, rounding it to the nearest .1
 
-
+  list1.round = lapply(list1, round, digits = 1)
 
 ## Bonus
 
